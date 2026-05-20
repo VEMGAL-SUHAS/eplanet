@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Subha Cancer | Layout</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheets" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            .src-only{
+                color:black;
+                font-weight:bold;
+            }
+            .suhas{
+                text-decoration:none;
+            }
+            .umar{
+                color:black;
+                border-radius:10px;
+            }
+            .src-only1{
+                color:red;
+            }
+            .suhas1{
+                background-image:url('data:image/jpeg;base64,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');
+                background-size:cover;
+                background-repeat:no-repeat;
+                background-position:center;
+                height:70vh;
+            }
+            .akhil{
+                color:blue;
+                border:2px solid blue;
+            }
+            .pavan{
+                color:orange;
+            }
+            .daniel{
+                text-decoration:none;
+            }
+            .suhas4{
+                border:2px solid black;
+            }
+            .silpa{
+                background-color:darkblue;
+                color:white;
+            }
+            .silpa1{
+                background-color:black;
+                color:white;
+            }
+            .silpa2{
+                background-color:red;
+                color:white;
+            }
+            .hen{
+                color:black;
+                text-decoration:none;
+            }
+            .foot-line{
+                background-color:lightcoral;
+                margin-top:10px;
+            }
+            .copyright{
+                background-color:black;
+                color:white;
+            }
+        </style>
+</head>
+<body>
+<section name="navbar">
+    <div class="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="https://subhacancercare.com/wp-content/uploads/2025/06/logo_new-scaled-300x139.png" width="230px" height="auto"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Facilities</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Doctors</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Patients Feedback</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Gallery</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">News</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Faq</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Services</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Book Appointment</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+<div class="about">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://subhacancercare.com/wp-content/uploads/2026/01/Untitled-design-83.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://subhacancercare.com/wp-content/uploads/2026/01/Untitled-design-81.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://subhacancercare.com/wp-content/uploads/2026/01/Untitled-design-82.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+<div class="about1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-sm-4 col-md-12 mt-4">
+                <img src="https://subhacancercare.com/wp-content/uploads/2025/06/Group-176.png" width="100px" height="200px">
+                <h4 class="text-primary">American Board Certified Doctors</h4>
+                <p>We have a team of doctors who were <span class="src-only">internationally trained</span> and have long years of <span class="src-only">academic</span> experience in major cancer care institutions in the America and in India. All cases will be discussed in a <span class="src-only">multidisciplinary Tumor Board</span> across all centers. Difficult or interesting cases will be discussed with international faculty from <span class="src-only">universities in the USA.</span></p>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-md-12 mt-4">
+                <img src="https://subhacancercare.com/wp-content/uploads/2025/06/Group-180.png" width="100px" height="200px">
+                <h4 class="text-primary">Our Day Care Center Concept</h4>
+                <p>We focus on taking cancer care to the out-patient setting as much as possible to make it <span class="src-only">less expensive</span> and <span class="src-only">more convenient.</span> Patients get to spend more time at their home with their families.</p>
+            </div>
+             <div class="col-lg-4 col-sm-4 col-md-12 mt-4">
+                <img src="https://subhacancercare.com/wp-content/uploads/2025/06/Group-181.png" width="100px" height="200px">
+                <h4 class="text-primary">Our Ethos</h4>
+                <p>We want our patients to feel like they are coming to <span class="src-only">our home</span> and not to a "hospital"</p>
+                <p>We hope to give you very personalised care, at <span class="src-only">your door step</span>, with the <span class="src-only">most modern expertise</span></p>
+            </div>
+            <div>
+                <h1 class="text-primary" style="text-align:center;">Our Services</h1>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-md-12 mt-4">
+                 <img src="https://www.bing.com/th/id/OIP.Df0-EGa5lfDQtOrZa70sbgAAAA?w=194&h=187&c=8&rs=1&qlt=70&o=6&pid=3.1&rm=2" width="80px" height="90px">
+                 <h4 class="text-primary">Specialist Consultations</h4>
+                 <p>- Medical Oncology</p>
+                 <p>- Hematology</p>
+                 <p>- Surgical Oncology</p>
+                 <p>- Radiation Oncology</p>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-md-12 mt-4">
+                <img src="https://www.bing.com/th/id/OIP.1mxYNRrxCKGzWcQtTwcz2QAAAA?w=194&h=182&c=8&rs=1&qlt=70&o=6&pid=3.1&rm=2" width="80px" height="90px">
+                <h4 class="text-primary">Immunotherapies and Targeted Therapies</h4>
+                <p>- New class of medicines that have revolutionised cancer care</p>
+                <p>- More cancers than ever are now cured or controlled</p>
+                <p>- Can be provided as appropriate at deep concessions</p>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-md-12 mt-4">
+                <img src="https://www.bing.com/th/id/OIP.5huM4cbFSRTLQHvJhmxKkQHaFx?w=194&h=151&c=8&rs=1&qlt=70&o=6&pid=3.1&rm=2" width="80px" height="90px">
+                <h4 class="text-primary">Chemotherapy Services</h4>
+                <p>- Comfortable beds and recliners</p>
+                <p>- State-of-the-art, USA based protocols</p>
+                <p>- Specialist nursing team</p>
+                <p>- Targeted therapies, Immunotherapies</p>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-md-12 mt-4">
+                <img src="https://www.bing.com/th/id/OIP.3k1h4iKJ6nC1CeO7nr0PvgAAAA?w=194&h=170&c=8&rs=1&qlt=70&o=6&pid=3.1&rm=2" width="80px" height="90px">
+                <h4 class="text-primary">Operation Services</h4>
+                <p>- Complete surgical oncology services</p>
+                <p>- The most modern surgical services</p>
+                <p>- Well equipped theater</p>
+                <p>- Internationally trained team</p>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-md-12 mt-4">
+                <img src="https://www.bing.com/th/id/OIP.bcO8sD2Vq5XaUBUg8F5esAHaHa?w=194&h=194&c=8&rs=1&qlt=70&o=6&pid=3.1&rm=2" width="80px" height="90px">
+                <h4 class="text-primary">Radiation Therapy Services</h4>
+                <p>- Access to IMRT,IGRT, & other latest techniques</p>
+                <p>- Stereotactic radiosurgery, Brachytherapy</p>
+                <p>- Flexible scheduling</p>
+                <p>- Transportation provided</p>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-md-12 mt-4">
+                <img src="https://www.bing.com/th/id/OIP.Tymyx8uqdiigGKNL-XBoEwAAAA?w=194&h=194&c=8&rs=1&qlt=70&o=6&pid=3.1&rm=2" width="80px" height="90px">
+                <h4 class="text-primary">Blood Tests</h4>
+                <p>- Full fledged laboratory</p>
+                <p>- Home blood sample collection</p>
+                <p>- Online reporting</p>
+                <p>- Certified lab</p>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-md-12 mt-4">
+                <img src="https://www.bing.com/th/id/OIP.Vi2bG53ftXv1X8SEtRjGZAAAAA?w=194&h=174&c=8&rs=1&qlt=70&o=6&pid=3.1&rm=2" width="80px" height="90px">
+                <h4 class="text-primary">Pharmacy</h4>
+                <p>- Inpatient pharmacy</p>
+                <p>- Outpatient pharmacy</p>
+                <p>- All latest drugs available</p>
+                <p>- All general medicines available</p>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-md-12 mt-4">
+                <img src="https://www.bing.com/th/id/OIP.Na4TJok89ZNCoblfsZMv4QAAAA?w=194&h=194&c=8&rs=1&qlt=70&o=6&pid=3.1&rm=2" width="80px" height="90px">
+                <h4 class="text-primary">Tumor Board Services</h4>
+                <p>- Multidisciplinary discussions on difficult cases</p>
+                <p>- Individualised care plans</p>
+                <p>- Standard International protocols & Evidence Based Medicine ensured</p>
+                <p>- Expert advice from University of California, & USA, via video conferencing</p>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-md-12 mt-4">
+                <img src="https://www.bing.com/th/id/OIP.K6M3QIHH7MrNK6Q0LilfwgAAAA?w=194&h=137&c=8&rs=1&qlt=70&o=6&pid=3.1&rm=2" width="80px" height="90px">
+                <h4 class="text-primary">Psychological Counselling</h4>
+                <p>- Specialist counselor</p>
+                <p>- Mental health development</p>
+                <p>- Personalized support</p>
+                <p>- Multidimensional Approach</p>
+                <p>- online counselling available</p>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-md-12 mt-4">
+                <img src="https://www.bing.com/th/id/OIP.gmFTg2M_bcjsCUDTUm8B6gAAAA?w=194&h=164&c=8&rs=1&qlt=70&o=6&pid=3.1&rm=2" width="80px" height="90px">
+                <h4 class="text-primary">Home Services</h4>
+                <p>- Home sample collection</p>
+                <p>- Home nursing care</p>
+                <p>- Palliative comfort cares</p>
+                <p>- Individualized personal care</p>
+            </div>
+            <h1 class="text-primary" style="text-align:center;">Our Specialties</h1>
+            <div class="col-lg-3 col-sm-3 col-md-12 mt-4" style="background-color:blue;color:white;">
+                <img src="https://www.bing.com/th/id/OIP.XGpzTU46FQazp8hiaiSHMgAAAA?w=194&h=194&c=8&rs=1&qlt=70&o=6&pid=3.1&rm=2" width="50px" height="60px">
+                <h4>Medical Oncology</h4>
+            </div>
+            <div class="col-lg-3 col-sm-3 col-md-12 mt-4">
+                <img src="https://www.bing.com/th/id/OIP.EaJBLjCUcWqnw6mxTVxw3wAAAA?w=194&h=146&c=8&rs=1&qlt=70&o=6&pid=3.1&rm=2" width="50px" height="60px">
+                <h4>Hematology</h4>
+            </div>
+            <div class="col-lg-3 col-sm-3 col-md-12 mt-4">
+                <img src="https://www.bing.com/th/id/OIP.-0VHJt_jnyLr3P9kMnJzCwHaHa?w=194&h=194&c=8&rs=1&qlt=70&o=6&pid=3.1&rm=2" width="50px" height="60px">
+                <h4>Surgical Oncology</h4>
+            </div>
+            <div class="col-lg-3 col-sm-3 col-md-12 mt-4">
+                <img src="https://www.bing.com/th/id/OIP.j_tBe3_wRIVfnqsuZtcSBwHaEK?w=194&h=135&c=8&rs=1&qlt=70&o=6&pid=3.1&rm=2" width="50px" height="60px">
+                <h4>Radiation Oncology</h4>
+            </div>
+            <div class="col-lg-3 col-sm-3 col-md-12 mt-4">
+                <img src="https://www.bing.com/th/id/OIP.9tkH7RGh3Rt544Der-dOOQAAAA?w=194&h=164&c=8&rs=1&qlt=70&o=6&pid=3.1&rm=2" width="50px" height="60px">
+                <h4>Psychological Counselling</h4>
+            </div>
+        </div>
+        <div class="ravi">
+           <div class="container">
+             <div class="row">
+                 <div class="col-lg-6 col-sm-6 col-md-12 mt-4">
+                <img src="https://subhacancercare.com/wp-content/uploads/2025/06/Medical1-min-3.png" width="350px" height="400px">
+            </div>
+            <div class="col-lg-6 col-sm-6 col-md-12 pt-4">
+                <h1>Medical Oncology</h1>
+                <p>This is a branch specialising in diagnosing and treating cancer using <span class="src-only">chemotherapy, hormonal therapy, biological therapy, targeted therapy, Immunotherapy, etc.</span> This is a very dynamic field with a lot of research and rapid new advances. A <span class="src-only">medical oncologist</span> often is the <span class="src-only">main health care provider</span> for someone who has cancer. A medical oncologist also gives <span class="src-only">supportive care</span> and <span class="src-only">palliative care.</span> Treating cancer is a team sport involving several specialists and a Medical Oncologist may <span class="src-only">coordinate treatment</span> given by other doctors.</p>
+                <ul>
+                    <li>>> U.S.A. qualified doctors</li>
+                    <li>>> Feel-like-home atmosphere</li>
+                    <li>>> Sophisticated Chemotherapy Suite</li>
+                    <li>>> International faculty, Tumour Board</li>
+                    <li>>> Most recent advances</li>
+                    <li>>> Easy and Affordable Billing</li>
+                </ul>
+                <button type="button" class="btn btn-primary">About Our Doctors</button>
+            </div>
+             </div>
+           </div>
+        </div>
+            <div class="col-lg-12 col-sm-12 col-md-12 mt-4">
+                <a href="https://youtu.be/_3PtUUgUSAg?si=YaA4gYfGiwtxJA6u" class="suhas">CANCER CARE TREATMENT</a>
+            </div>
+        <div class="suhas">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-4 col-md-12 mt-4">
+                <img src="https://subhacancercare.com/wp-content/uploads/2025/06/doctor-with-stethoscope_1426-1211.jpg" width="250px" height="300px">
+            </div>
+            <div class="col-lg-4 col-sm-4 col-md-12">
+                <div class="bg-primary text-white">
+                    <h1>Our Facilities</h1>
+                    <p><i class="fa-solid fa-check"></i>Chemotherapy Suite</p>
+                    <p><i class="fa-solid fa-check"></i>Procedure Room & Operation Theater</p>
+                    <p><i class="fa-solid fa-check"></i>Pharmacy Services (Inpatient & Outpatient) with home delivery</p>
+                    <p><i class="fa-solid fa-check"></i>Laboratory Services with home sample collection</p>
+                    <p><i class="fa-solid fa-check"></i>Psychological counselling & coping skills</p>
+                    <p><i class="fa-solid fa-check"></i>Dietitian Services</p>
+                    <p><i class="fa-solid fa-check"></i>Physiotherapy</p>
+                    <p><i class="fa-solid fa-check"></i>Private Counselling Room</p>
+                    <p><i class="fa-solid fa-check"></i>Patient Library</p>
+                    <p><i class="fa-solid fa-check"></i>Patient Support Groups</p>
+                    <p><i class="fa-solid fa-check"></i>Palliative & comfort care</p>
+                    <p><i class="fa-solid fa-check"></i>Home Nursing care</p>
+                    <p><i class="fa-solid fa-check"></i>Patient transportation services with escort</p>
+                    <p><i class="fa-solid fa-check"></i>One-on-one detailed patient education</p>
+                    <div>
+                        <button type="button" class="umar">View details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-md-12 mt-4">
+                <div class="suhas1">
+                    <h1 class="text-primary">Appointment</h1>
+                    <div>
+                        <label htmlfor="name">Name <span class="src-only1">*</span></label>
+                        <input type="text" name="Name" id="myName" placeholder="Enter Your Name">
+                    </div>
+                    <div>
+                        <label htmlfor="name">E-mail <span class="src-only1">*</span></label>
+                        <input type="text" name="Name" id="myName" placeholder="Enter Your E-mail">
+                    </div>
+                    <div>
+                        <label htmlfor="name">Phone <span class="src-only1">*</span></label>
+                        <input type="text" name="Name" id="myName" placeholder="Enter Your Phone Number">
+                    </div>
+                    <div>
+                        <label htmlfor="name">Select <span class="src-only1">*</span></label>
+                        <input list="text" name="Name" id="myName" placeholder="Doctors">
+                            <datalist id="Doctors">
+                                <option value="Dr.Srinivas Chakravarthy Gummaraju">
+                                <option value="Dr.Srinivas juluri">
+                                <option value="Dr.Ashwin Pandit">
+                                <option value="Dr.Ashwin M Shah">
+                                <option value="Dr.Nalini Yadala">
+                                <option value="Dr.Shifra Thayar">
+                            </datalist>
+                    </div>
+                    <div>
+                        <label htmlfor="name">Date <span class="src-only1">*</span></label>
+                        <input type="text" name="date" id="myDate" placeholder="dd-mm-yyyy">
+                    </div>
+                    <div>
+                        <label htmlfor="name">Patient Status <span class="src-only">*</span></label>
+                        <input list="name" name="Name" id="myName" placeholder="Select Value">
+                           <datalist id="patient">
+                              <option value="New Patient">
+                              <option value="Existing Patient">
+                           </datalist>
+                    </div>
+                    <div>
+                        <label htmlfor="name">Captcha</label>
+                        <input type="name" name="Name" id="myName" placeholder="Enter the captcha">
+                    </div>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div> 
+                </div>
+            </div>
+        </div>
+        <div class="pt-4">
+            <h1 class="text-primary" style="text-align:center;">Our Doctors</h1>
+        </div>
+        <div class="umar1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-sm-2 col-md-12 mt-4">
+                        <img src="https://subhacancercare.com/wp-content/uploads/2025/06/resizes-1-min_11zon-1438x1536.jpg" width="150px" height="200px">
+                        <h4>Dr. Srinivas Chakravarthy Gummaraju</h4>
+                        <p>American Board of Internal Medicine Certified in Hematology & Medical Oncology</p>
+                        <h4 style="color:black;font-weight:bold;">Senior Consultant Medical Oncologist & Hematologist</h4>
+                        <button type="button" class="akhil">View Details</button>
+                    </div>
+                    <div class="col-lg-2 col-sm-2 col-md-12 mt-4">
+                        <img src="https://subhacancercare.com/wp-content/uploads/2025/06/resizes-2-1438x1536.jpg" width="150px" height="200px">
+                        <h4>Dr. Srinivas Juluri</h4>
+                        <p>MS (AIIMS), MCh (Tata Memorial), MRCS (Edin)</p>
+                        <h4 style="color:black;font-weight:bold;">Senior Consultant Surgical Oncologist</h4>
+                        <button type="button" class="akhil">View Details</button>
+                    </div>
+                    <div class="col-lg-2 col-sm-2 col-md-12 mt-4">
+                        <img src="https://subhacancercare.com/wp-content/uploads/2025/06/resizes-3-min-1438x1536.jpg" width="150px" height="200px">
+                        <h4>Dr. Nalini Yadala</h4>
+                        <p>MD, DNB, Fellow UICC (UK)</p>
+                        <h4 style="color:black;font-weight:bold;">Senior Consultant Radiation Oncologist</h4>
+                        <button type="button" class="akhil">View Details</button>
+                    </div>
+                    <div class="col-lg-2 col-sm-2 col-md-12 mt-4">
+                        <img src="https://subhacancercare.com/wp-content/uploads/2025/06/ashwin-new.jpg" width="150px" height="200px">
+                        <h4>Dr. Ashwin Pandit</h4>
+                        <p>MBBS, DNB -General Surgeon</p>
+                        <h4 style="color:black;font-weight:bold;">15 Years Experience Overall (9 years as specialist)</h4>
+                        <button type="button" class="akhil">View Details</button>
+                    </div>
+                    <div class="col-lg-2 col-sm-2 col-md-12 mt-4">
+                        <img src="https://subhacancercare.com/wp-content/uploads/2025/06/ashwin-new-img.jpg" width="150px" height="200px">
+                        <h4>Dr. Ashwin M Shah</h4>
+                        <p>MBBS, MD (Radiation Oncology)</p>
+                        <h4 style="color:black;font-weight:bold;">Senior Consultant Radiation Oncologist, experience for over 30 years</h4>
+                        <button type="button" class="akhil">View Details</button>
+                    </div>
+                    <div class="col-lg-2 col-sm-2 col-md-12 mt-4">
+                        <img src="https://subhacancercare.com/wp-content/uploads/2026/01/OIP-e1768638704725.webp" width="150px" height="200px">
+                        <h4>Ms. Shifra Thaiyar</h4>
+                        <p>Patient Guidance Counsellor</p>
+                        <button type="button" class="akhil">View Details</button>
+                    </div>
+                    <div class="pt-4">
+                        <h1 class="text-primary" style="text-align:center;">Patient Feedback</h1>
+                    </div>
+                    <div class="col-lg-4 col-sm-4 col-md-12 mt-4">
+                        <img src="https://lh3.googleusercontent.com/a/ACg8ocIQH3MoiEhwDfsT1xsRsYGTXLeIXO6DHIJYmk-JTIu7JvOltw=w64-h64-c-rp-mo-br100" width="50px" height="60px">
+                        <h4>vijayachandra reddy</h4>
+                        <p>1 year ago</p>
+                        <p class="pavan"><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </p>
+                        <p>Very Nice Doctor I am very happy in phone respone Thank you so much Sir</p>
+                    </div>
+                    <div class="col-lg-4 col-sm-4 col-md-12 mt-4">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/icon.svg" width="50px" height="60px">
+                        <h4>fawwad shaikh</h4>
+                        <p>1 year ago</p>
+                        <p class="pavan"><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </p>
+                        <p>Very great</p>
+                    </div>
+                    <div class="col-lg-4 col-sm-4 col-md-12 mt-4">
+                        <img src="https://lh3.googleusercontent.com/a/ACg8ocL_GK0xuSsfJWKhUTuVO_r0BeycL2ZuNc9O53c_HQJO8Bi_Sg=w64-h64-c-rp-mo-br100" width="50px" height="60px">
+                        <h4>Srikanth Mutyala</h4>
+                        <p>1 year ago</p>
+                        <p class="pavan"><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </p>
+                        <p>Nice sir</p>
+                    </div>
+                    <div class="pt-4">
+                        <h1 class="text-primary" style="text-align:center;">Gallery</h1>
+                    </div>
+                    <div class="col-lg-12 col-sm-12 col-md-12 mt-4">
+                         <button type="button" class="btn btn-primary">Academic Conferences</button>
+                         <button type="button" class="anju">Our Centers</button>
+                         <button type="button" class="anju">patient meetings</button>
+                    </div>
+                    <div class="col-lg-4 col-sm-4 col-md-12 mt-4">
+                        <img src="https://subhacancercare.com/wp-content/uploads/2025/06/resizes-4.jpg" width="150px" height="200px">
+                    </div>
+                    <div class="col-lg-4 col-sm-4 col-md-12 mt-4">
+                        <img src="https://subhacancercare.com/wp-content/uploads/2025/06/resizes-20-300x169.jpg" width="150px" height="200px">
+                    </div>
+                    <div class="col-lg-4 col-sm-4 col-md-12 mt-4">
+                        <img src="https://subhacancercare.com/wp-content/uploads/2025/06/resizes-21-600x600.jpg" width="150px" height="200px">
+                    </div>
+                    <div class="col-lg-4 col-sm-4 col-md-12 mt-4">
+                        <img src="https://subhacancercare.com/wp-content/uploads/2025/06/IMG-20160516-WA0032.jpg" width="150px" height="200px">
+                    </div>
+                    <div class="col-lg-4 col-sm-4 col-md-12 mt-4">
+                        <img src="https://subhacancercare.com/wp-content/uploads/2025/06/IMG-20170720-WA0005-copy-600x600.jpg" width="150px" height="200px">
+                    </div>
+                    <div class="col-lg-4 col-sm-4 col-md-12 mt-4">
+                        <img src="https://subhacancercare.com/wp-content/uploads/2025/06/IMG-20160516-WA0034.jpg" width="150px" height="200px">
+                    </div>
+                    <div class="col-lg-4 col-sm-4 col-md-12 mt-4">
+                        <img src="https://subhacancercare.com/wp-content/uploads/2025/06/DSC01898-min-JPG.jpg" width="150px" height="200px">
+                    </div>
+                    <div class="col-lg-4 col-sm-4 col-md-12 mt-4">
+                        <img src="https://subhacancercare.com/wp-content/uploads/2025/06/resizes-11.jpg" width="150px" height="200px">
+                    </div>
+                    <div class="col-lg-4 col-sm-4 col-md-12 mt-4">
+                        <img src="https://subhacancercare.com/wp-content/uploads/2025/06/resizes-16-600x600.jpg" width="150px" height="200px">
+                    </div>
+                    <div class="col-lg-4 col-sm-4 col-md-12 mt-4">
+                        <img src="https://subhacancercare.com/wp-content/uploads/2025/06/resizes-24.jpg" width="150px" height="200px">
+                    </div>
+                    <div class="col-lg-4 col-sm-4 col-md-12 mt-4">
+                        <img src="https://subhacancercare.com/wp-content/uploads/2025/06/resizes-25-300x200.jpg" width="150px" height="200px">
+                    </div>
+                    <div class="col-lg-4 col-sm-4 col-md-12 mt-4">
+                        <img src="https://subhacancercare.com/wp-content/uploads/2025/06/MJS_6152-1--600x600.jpg" width="150px" height="200px">
+                    </div>
+                    <div class="pt-4">
+                        <h1 class="text-primary" style="text-align:center;">NEWS</h1>
+                    </div>
+                    <div class="col-lg-4 col-sm-4 col-md-12 mt-4">
+                        <img src="https://subhacancercare.com/wp-content/uploads/2025/06/news6-600x315.jpg" width="250px" height="300px">
+                        <div>
+                           <a href="#" class="daniel">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-4 col-md-12 mt-4">
+                        <img src="https://www.bing.com/th/id/OIP.jGcUWnXI6mR6csezEgAD5QHaE8?w=194&h=135&c=8&rs=1&qlt=70&o=6&pid=3.1&rm=2" width="250px" height="300px">
+                        <div>
+                           <a href="#" class="daniel">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-4 col-md-12 mt-4">
+                        <img src="https://www.bing.com/th/id/OIP.llG8e_kb2DHUAjiLZmEeYAHaG7?w=194&h=181&c=8&rs=1&qlt=70&o=6&pid=3.1&rm=2" width="250px" height="300px">
+                        <div>
+                        <a href="#" class="daniel">Read More</a>
+                        </div>
+                    </div>
+                    <div class="pt-4">
+                        <h1 class="text-primary" style="text-align:center;">Useful Links</h1>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 col-md-12 pt-4">
+                        <h4>National Institute of Cancer Prevention and Research :<a href="#" class="daniel">http://cancerindia.org.in</a></h4>
+                        <div>
+                           <h4>National Cancer Institute, USA:<a href="#" class="daniel">cancer.gov</a></h4> 
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 col-md-12 pt-4">
+                        <h4>Indian Cancer Society :<a href="#" class="daniel">indiancancersociety.org</a></h4>
+                        <div>
+                           <h4>American Cancer Society :<a href="#" class="daniel">cancer.org</a></h4> 
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-4 col-md-12" style="background-color:blue;color:white;">
+                        <div class="suhas3">
+                            <h4><i class="fa-brands fa-weixin"></i>Appointment</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-4 col-md-12" style="background-color:blue;color:white;">
+                        <div class="suhas3">
+                            <h4><i class="fa-solid fa-bug"></i>Request for Online Lab Report</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-4 col-md-12" style="background-color:blue;color:white;">
+                        <div class="suhas3">
+                            <h4><i class="fa-solid fa-bug"></i>Careers With Us</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<section name="footer">
+    <div class="foot-line">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-4 col-md-12 mt-4">
+                    <img src="https://subhacancercare.com/wp-content/uploads/2025/06/logo_new-scaled-1024x474.png" width="100px" height="auto">
+                    <p class="text-primary">www.subhacancercare.com</p>
+                    <p class="text-primary">info@subhacancercare.com</p>
+                    <p class="text-primary">subhacancercarebkphyd@gmail.com</p>
+                    <div class="suhas4">
+                        <img src="https://subhacancercare.com/wp-content/uploads/2025/06/Group-176.png" width="150px" height="auto">
+                        <h4 class="text-primary">Subha Centers for Cancer & Blood Diseases</h4>
+                        <p class="fw-bold">Opening Hours</p>
+                        <p style="text-decoration:dottedline;">Monday - Saturday -10.30 am - 7:30 pm</p>
+                        <p style="text-decoration:dottedline;">Sundays & National Holidays - Holiday</p>
+                        <p>Just make an appointment to get help from our experts</p>
+                    </div>
+                    <div>
+                        <button type="button" class="silpa"><i class="fa-brands fa-facebook"></i></button>
+                        <button type="button" class="silpa1"><i class="fa-brands fa-instagram"></i></button>
+                        <button type="button" class="silpa2"><i class="fa-brands fa-youtube"></i></button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-4 col-md-12 pt-4">
+                    <h4 class="text-primary">Barkatpura</h4>
+                    <div>
+                        <p style="text-decoration:dotted;">Subha Center for Cancer & Blood Diseases</p>
+                        <p style="text-decoration:dotted;">3-4-491/1, Baghlingampally cross roads, Barkatpura, Hyderabad, Telangana 500027</p>
+                        <p style="text-decoration:dotted;">040-2756 8999</p>
+                        <p style="text-decoration:dotted;">+91 7901057453 , +91 7331126215</p>
+                        <p style="text-decoration:dotted;">Privacy Policy</p>
+                        <p style="text-decoration:dotted;">Terms & Conditions</p>
+                        <p style="text-decoration:dotted;">Refund Policy</p>
+                    </div>
+                    <div class="pt-4">
+                        <h1 class="text-primary">Our Services</h1>
+                        <div>
+                            <a href="#" class="hen">Specialist Consultations</a>
+                        </div>
+                        <div>
+                            <a href="#" class="hen">Immunotherapies and Targeted Therapies</a>
+                        </div>
+                        <div>
+                            <a href="#" class="hen">Radiation Therapy Services</a>
+                        </div>
+                        <div>
+                            <a href="#" class="hen">Tumor Board Services</a>
+                        </div>
+                        <div>
+                            <a href="#" class="hen">Chemotherapy Services</a>
+                        </div>
+                        <div>
+                            <a href="#" class="hen">Blood Tests</a>
+                        </div>
+                        <div>
+                            <a href="#" class="hen">Psychological Counselling</a>
+                        </div>
+                        <div>
+                            <a href="#" class="hen">Operation Services</a>
+                        </div>
+                        <div>
+                            <a href="#" class="hen">Pharmacy</a>
+                        </div>
+                        <div>
+                            <a href="#" class="hen">Home Services</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-4 col-md-12 mt-4">
+                    <img src="c:\Users\Vemgal Suhas\Downloads\Screenshot_19-5-2026_2176_subhacancercare.com.jpeg" width="350px" height="400px">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p style="text-align:center;">Copyright © 2025 Subha Comprehensive Cancer Care. All Rights Reserved</p>
+    </div>
+</section>
+</body>
+</html>
