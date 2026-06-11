@@ -1,0 +1,78 @@
+/* Color System */
+:root {
+  --nayara-crimson: #b30006;
+  --nayara-navy: #121e2d;
+}
+
+.brand-text {
+  font-size: 1.25rem;
+  color: #0b1c3f;
+}
+
+.logo-icon-box {
+  font-size: 1.5rem;
+}
+
+/* Custom Header Apply Button overrides Bootstrap defaults */
+.btn-apply-header {
+  background-color: #0026e6 !important;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  color: white !important;
+}
+
+.btn-apply-header:hover {
+  background-color: #001ec0 !important;
+}
+
+/* Hero Customization */
+.nayara-hero {
+  background: linear-gradient(135deg, #a81a1a 0%, #680a0a 100%);
+  color: white;
+}
+
+.back-btn {
+  font-size: 0.85rem;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.max-width-600 {
+  max-width: 600px;
+}
+
+.opacity-90 {
+  opacity: 0.9;
+}
+
+/* Segment Headings */
+.segment-title {
+  color: var(--nayara-navy);
+  font-size: 1.75rem;
+}
+
+/* Card Rules */
+.border-top-red {
+  border: none;
+  border-top: 4px solid var(--nayara-crimson) !important;
+}
+
+/* Dark Metrics Cards */
+.dark-metric-card {
+  background-color: var(--nayara-navy);
+}
+
+.text-muted-custom {
+  color: #abb5c2;
+}
+
+/* Step badges for application row */
+.step-count-badge {
+  width: 26px;
+  height: 26px;
+  font-size: 0.8rem;
+}
+
+.relative-box {
+  position: relative;
+}
