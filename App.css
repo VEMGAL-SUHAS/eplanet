@@ -1,78 +1,246 @@
-/* Color System */
 :root {
-  --nayara-crimson: #b30006;
-  --nayara-navy: #121e2d;
+  --primary-blue: #1e40af;
+  --gradient-bg: linear-gradient(135deg, #2563eb, #1d4ed8);
+  --text-dark: #333333;
+  --text-muted: #666666;
+  --bg-light: #f8fafc;
+  --border-color: #e2e8f0;
+  --success-green: #10b981;
 }
 
-.brand-text {
-  font-size: 1.25rem;
-  color: #0b1c3f;
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f1f5f9;
+  color: var(--text-dark);
 }
 
-.logo-icon-box {
-  font-size: 1.5rem;
+.eligibility-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 60px;
 }
 
-/* Custom Header Apply Button overrides Bootstrap defaults */
-.btn-apply-header {
-  background-color: #0026e6 !important;
-  border: 1px solid #000000;
-  border-radius: 4px;
-  color: white !important;
-}
-
-.btn-apply-header:hover {
-  background-color: #001ec0 !important;
-}
-
-/* Hero Customization */
-.nayara-hero {
-  background: linear-gradient(135deg, #a81a1a 0%, #680a0a 100%);
+/* Hero Header */
+.hero-header {
+  background: var(--gradient-bg);
   color: white;
+  text-align: center;
+  padding: 60px 20px;
 }
 
-.back-btn {
-  font-size: 0.85rem;
-  opacity: 0.8;
-  cursor: pointer;
+.hero-header h1 {
+  margin: 0 0 10px 0;
+  font-size: 2.5rem;
+  font-weight: 600;
 }
 
-.max-width-600 {
-  max-width: 600px;
-}
-
-.opacity-90 {
+.hero-header p {
+  margin: 0;
+  font-size: 1.1rem;
   opacity: 0.9;
 }
 
-/* Segment Headings */
-.segment-title {
-  color: var(--nayara-navy);
-  font-size: 1.75rem;
+/* Overview Cards */
+.overview-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+  margin-top: -30px;
 }
 
-/* Card Rules */
-.border-top-red {
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.card-value {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.highlight-blue {
+  color: #2563eb;
+}
+
+/* Requirements Accordion */
+.requirements-accordion, .documents-section {
+  padding: 40px 20px 20px 20px;
+}
+
+.requirements-accordion h2, .documents-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1e293b;
+}
+
+.accordion-item {
+  background: white;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+}
+
+.accordion-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  background: white;
   border: none;
-  border-top: 4px solid var(--nayara-crimson) !important;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.2s;
 }
 
-/* Dark Metrics Cards */
-.dark-metric-card {
-  background-color: var(--nayara-navy);
+.accordion-header:hover {
+  background: #f8fafc;
 }
 
-.text-muted-custom {
-  color: #abb5c2;
+.accordion-content {
+  padding: 20px;
+  background: #ffffff;
+  border-top: 1px solid var(--border-color);
 }
 
-/* Step badges for application row */
-.step-count-badge {
-  width: 26px;
-  height: 26px;
-  font-size: 0.8rem;
+.accordion-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: #0f766e; /* Using a clean dark teal green for checkmarks */
+  font-weight: 500;
 }
 
-.relative-box {
-  position: relative;
+/* Documents Grid */
+.documents-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.doc-box {
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.doc-box h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 8px;
+  color: #1e293b;
+  text-align: center;
+}
+
+.doc-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #475569;
+}
+
+/* Notice Box */
+.notice-box {
+  background-color: #fffbeb;
+  border: 1px solid #fef3c7;
+  border-radius: 8px;
+  margin: 40px 20px;
+  padding: 24px;
+  display: flex;
+  gap: 16px;
+}
+
+.notice-icon {
+  font-size: 1.5rem;
+}
+
+.notice-content h4 {
+  margin: 0 0 10px 0;
+  color: #92400e;
+  font-size: 1.1rem;
+}
+
+.notice-content ul {
+  margin: 0;
+  padding-left: 20px;
+  color: #b45309;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Call to Action */
+.cta-section {
+  background: var(--gradient-bg);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  margin-top: 40px;
+}
+
+.cta-section h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.8rem;
+}
+
+.cta-section p {
+  margin: 0 0 24px 0;
+  opacity: 0.9;
+}
+
+.btn-apply {
+  background-color: var(--success-green);
+  color: white;
+  border: none;
+  padding: 14px 36px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-apply:hover {
+  background-color: #059669;
+}
+
+.btn-apply:active {
+  transform: scale(0.98);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .hero-header h1 {
+    font-size: 2rem;
+  }
+  .overview-cards {
+    margin-top: -15px;
+  }
 }
