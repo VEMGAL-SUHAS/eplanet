@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Petrol | CSS Layout</title>
+    <meta-charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheets" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <style>
+           .navbar,.navbar-brand,.navbar-nav,
+           .nav-item,.nav-link{
+            display:flex;
+            justify-content:space-between;
+            flex-direction:row;
+            text-decoration:none;
+            font-size:20px;
+            background-color:yellowgreen;
+            color:black;
+            padding:8px;
+           } 
+           .suhas{
+            background-color:blue;
+            color:black;
+            margin-top:20px;
+            margin-bottom:50px;
+            margin-left:50px;
+            margin-right:50px;
+            font-size:20px;
+           }
+           .about{
+            background-color:lightslategray;
+            font-size:20px;
+           }
+           .suhas1{
+            background-color:darkblue;
+            color:white;
+            border-radius:100px;
+            font-size:20px;
+           }
+           .suhas2{
+              background-color:blue;
+              color:white;
+              font-size:20px;
+           }
+           .about1{
+            display:flex;
+            justify-content:space-between;
+            flex-direction:row;
+            background-color:orange;
+            margin-top:10px;
+            font-size:20px;
+           }
+           .akhil{
+            background-color:lightblue;
+            color:blue;
+            border-radius:100px;
+            font-size:20px;
+           }
+           .src-only{
+               font-size:20px;
+           }
+           .src-only1{
+            color:blue;
+            font-size:20px;
+           }
+           .about2{
+            display:flex;
+            justify-content:space-between;
+            flex-direction:row;
+            font-size:20px;
+            margin-top:10px;
+           }
+           .about3{
+            display:flex;
+            justify-content:space-between;
+            flex-direction:row;
+            font-size:20px;
+            margin-top:10px;
+           }
+           .about2,.about3{
+               background-color:limegreen;
+           }
+           .gen{
+            color:green;
+           }
+           .pavan{
+            background-color:limegreen;
+            color:green;
+            border-radius:100px;
+            margin-top:10px;
+           }
+           .about4{
+            display:flex;
+            justify-content:space-between;
+            flex-direction:row;
+            background-color:blueviolet;
+            font-size:20px;
+            margin-top:10px;
+           }
+           .about5{
+            display:flex;
+            justify-content:space-between;
+            flex-direction:row;
+            background-color:fuchsia;
+            font-size:20px;
+            margin-top:10px;
+           }
+           .about6{
+            display:flex;
+            justify-content:space-between;
+            flex-direction:row;
+            background-color:lightgreen;
+            font-size:20px;
+            margin-top:10px;
+           }
+           .army{
+            background-color:darkblue;
+            color:white;
+            font-size:20px;
+            border-radius:100px;
+           }
+           .about7{
+            display:flex;
+            justify-content:space-between;
+            flex-direction:row;
+            background-color:darkblue;
+            color:white;
+            font-size:20px;
+            margin-top:10px;
+           }
+           .police{
+            color:blueviolet;
+            font-size:20px;
+            border-radius:100px;
+           }
+           .src-only4{
+            color:blueviolet;
+           }
+           .about8{
+            display:flex;
+            justify-content:space-between;
+            flex-direction:row;
+            background-color:fuchsia;
+            font-size:20px;
+            margin-top:10px;
+           }
+           .about9{
+            display:flex;
+            justify-content:space-between;
+            flex-direction:row;
+            background-color:brown;
+            font-size:20px;
+            margin-top:10px;
+           }
+           .umar1{
+              color:blueviolet;
+              font-size:20px;
+              border-radius:100px;
+           }
+           .umar2{
+            background-color:darkblue;
+            color:white;
+            border-radius:100px;
+            font-size:20px;
+           }
+           .about10{
+            background-color:darkblue;
+            color:white;
+            font-size:20px;
+            margin-top:10px;
+           }
+           .vvr{
+             color:yellow;
+           }
+           .service{
+            color:white;
+            text-decoration:none;
+           }
+           .foot-line{
+            display:flex;
+            justify-content:space-between;
+            flex-direction:row;
+            background-color:blue;
+            color:white;
+            margin-top:10px;
+           }
+           .footer1{
+            display:flex;
+            justify-content:space-between;
+            flex-direction:row;
+            background-color:blue;
+            color:white;
+            text-decoration:overline;
+            text-decoration-color:white;
+           }
+       </style>
+</head>
+<body>
+<section name="navbar">
+    <div class="navbar">
+        <a href="#" class="navbar-brand"><img src="https://timely-meringue-4240cb.netlify.app/assets/logo-C1_8TimT.png" width="100px" height="auto"></a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Eligibility</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">FAQ'S</a>
+            </li>
+        </ul>
+        <button type="button" class="suhas">Apply Now</button>
+    </div>
+    <div class="about">
+        <button type="button" class="suhas1">Premium Dealership Available--2025</button>
+        <h4>Start Your Petrol Pump Dealership Journey <span class="src-only">Today</span></h4>
+        <p>Join India's fastest-growing fuel retail network. We provide end-to-end support — from land acquisition to station launch — with guaranteed fuel purity and quality certification.</p>
+        <div>
+            <button type="button" class="suhas2">Apply For Dealership-></button>
+            <button type="button" class="umar">Explore Services-></button>
+        </div>
+    </div>
+    <div class="about1">
+        <div>
+            <img src="https://images.unsplash.com/photo-1545231027-637d2f6210f8?w=100&h=100&fit=crop&q=80" width="50px" height="auto">
+            <h4 style="color:blue;">1200+</h4>
+            <p>Fuel Stations</p>
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=100&h=100&fit=crop&q=80" width="50px" height="auto">
+            <h4 style="color:blue;">3.2M+</h4>
+            <p>Happy Customers</p>
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=100&h=100&fit=crop&q=80" width="50px" height="auto">
+            <h4 style="color:blue;">28+</h4>
+            <p>States Covered</p>
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&q=80" width="50px" height="auto">
+            <h4 style="color:blue;">15+</h4>
+            <p>Years of Excellence</p>
+        </div>
+    </div>
+    <div style="text-align:center;margin-top:10px;">
+        <button type="button" class="akhil">What We Offer</button>
+        <h4>World-Class <span class="src-only1">Fuel Station</span> Services</h4>
+        <p>From premium fuel to EV charging, convenience stores to digital payments — our stations are designed for the modern customer.</p>
+    </div>
+    <div class="about2">
+        <div>
+           <img src="https://www.rushlane.com/wp-content/uploads/2025/01/premium-fuel-vs-regular-octane-rating-petrol-pump-station-768x576.jpg" width="80px" height="90px">
+           <h4 style="color:blue;">Premium Quality Fuel</h4>
+           <p>Our fuel meets IS 2796 and BS-VI standards with guaranteed purity. Every batch undergoes rigorous testing for octane rating, density, and contamination before reaching your vehicle.</p>
+        </div>
+         <div>
+           <img src="https://spectrafuels.com/wp-content/uploads/2024/06/Innovations-in-Bunker-Fuel-Sampling-and-Testing-Techniques-Image-2048x1365.jpg" width="80px" height="90px">
+           <h4 style="color:red;">Advanced Fuel Testing Lab</h4>
+           <p>State-of-the-art NABL accredited laboratories at every distribution center. Real-time quality monitoring with automated sampling ensures consistent fuel standards across all stations.</p>
+        </div>
+         <div>
+           <img src="https://www.distrelec.ch/medias/2023-evcharging-homepage-EN.jpg?context=bWFzdGVyfHJvb3R8MTcxMTI0fGltYWdlL2pwZWd8aDk5L2g4Yi85NjQ1MjEzMjIwODk0LzIwMjMtZXZjaGFyZ2luZy1ob21lcGFnZS1FTi5qcGd8ZTMyNWI0NDM2Y2FmMjUzNjE2MTgwMTQ3NjY2YjE4OTFjNzE0YzFkMWM1ZjZhYWJhN2U4MDZjZWEyM2FiNzk4YQ" width="80px" height="90px">
+           <h4 style="color:green;">EV Charging Infrastructure</h4>
+           <p>Future-ready stations with DC fast chargers (30kW to 150kW) compatible with all major EV brands. CCS2 and CHAdeMO connectors available with smart billing integration.</p>
+        </div>
+    </div>
+    <div class="about3">
+        <div>
+           <img src="https://images.squarespace-cdn.com/content/v1/60a523b89bd6bb2e507c4b43/02487334-fbbb-4239-8d1a-87e0ec177a5e/C-store.jpg?format=1500w" width="80px" height="90px">
+           <h4 style="color:chocolate;">24/7 Convenience Store</h4>
+           <p>Well-stocked convenience stores with snacks, beverages, automotive accessories, engine oils, and emergency supplies. Clean restrooms and air/water facilities available round the clock.</p>
+        </div>
+         <div>
+           <img src="https://tse4.mm.bing.net/th/id/OIP._Qi6b5OGbsZiQuvfD8UtBAHaJr?r=0&w=1146&h=1498&rs=1&pid=ImgDetMain&o=7&rm=3" width="80px" height="90px">
+           <h4 style="color:orangered;">Digital Payment Solutions</h4>
+           <p>Accept UPI, credit/debit cards, mobile wallets, and fleet cards. RFID-enabled fast checkout for commercial vehicles with monthly billing and GST-compliant invoicing.</p>
+        </div>
+         <div>
+           <img src="https://cdn.cstoredigitalsignage.com/images/gas-station-digital-signage.jpg" width="80px" height="90px">
+           <h4 style="color:black;">Safety & Compliance</h4>
+           <p>PED certified stations with underground leak detection, vapour recovery systems, fire suppression, and emergency shutdown protocols. Regular PESO and Chief Controller of Explosives audits.</p>
+        </div>
+    </div>
+    <div class="about4">
+        <div>
+           <button type="button" class="pavan">Quality Assurance</button>
+           <h1>Guaranteed Fuel <span class="gen">Purity</span> & Quality</h1>
+           <p>Every liter of fuel dispensed at our partner stations undergoes a rigorous 6-stage quality control process. From refinery to your tank, we ensure uncompromised purity.</p>
+           <div>
+            <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=40&h=40&fit=crop" width="50px" height="auto">
+            <h4>NABL Accredited Testing Laboratories</h4>
+           </div>
+           <div>
+            <img src="data:image/jpeg;base64,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" width="50px" height="auto">
+            <h4>Real-time Density & Contamination Checks</h4>
+           </div>
+           <div>
+            <img src="https://images.unsplash.com/photo-1560472355-536de3962603?w=40&h=40&fit=crop" width="50px" height="auto">
+            <h4>BS-VI Emission Standard Compliance</h4>
+           </div>
+           <div>
+            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=40&h=40&fit=crop" width="50px" height="auto">
+            <h4>Free On-Site Quality Verification</h4>
+           </div>
+        </div>
+        <div>
+            <img src="https://petrolgroup.pro/en/wp-content/uploads/2025/01/Site-_-Capa-do-Blog-1920X1080-3.png" width="80px" height="90px">
+            <img src="https://www.bing.com/th/id/OIP.Bf7kyeHfioSocqkeXf859AAAAA?w=193&h=135&c=8&rs=1&qlt=70&o=6&pid=3.1&rm=2" width="80px" height="90px">
+        </div>
+    </div>
+    <div style="text-align:center;margin-top:10px;">
+        <h1>6-Stage Quality Control Process</h1>
+        <p>From refinery to pump — every step monitored and certified</p>
+    </div>
+    <div class="about5">
+        <div>
+            <img src="https://asiainsurancepost.com/wp-content/uploads/2026/05/Green-fuel-1080x675.jpg" width="80px" height="90px">
+            <h4>Source Verification</h4>
+            <p>Fuel sourced directly from authorized refineries with complete traceability. Every tanker carries a unique QR code for digital tracking from refinery to pump.</p>
+        </div>
+         <div>
+            <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=400&h=300&fit=crop&q=80" width="80px" height="90px">
+            <h4>Laboratory Testing</h4>
+            <p>NABL accredited labs test every batch for density, flash point, sulphur content, octane/cetane numbers, and water contamination before dispatch.</p>
+        </div>
+         <div>
+            <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=400&h=300&fit=crop&q=80" width="80px" height="90px">
+            <h4>Tanker Sealing</h4>
+            <p>Tamper-evident electronic seals with GPS tracking. Any breach triggers immediate alerts. Temperature monitoring ensures fuel integrity during transit.</p>
+        </div>
+    </div>
+    <div class="about6">
+        <div>
+            <img src="https://iotixlab.com/wp-content/uploads/2025/07/fuel-storage-tank-monitoring-system-03-1024x768.webp" width="80px" height="90px">
+            <h4>Storage Monitoring</h4>
+            <p>Underground tanks equipped with automatic tank gauging, leak detection sensors, and water sump alarms. Daily dip measurements ensure accurate inventory.</p>
+        </div>
+         <div>
+            <img src="data:image/jpeg;base64,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" width="80px" height="90px">
+            <h4>Dispenser Calibration</h4>
+            <p>Fuel dispensers calibrated every 6 months by Legal Metrology Department. Flow meters tested for accuracy within ±0.3% tolerance as per OIML standards.</p>
+        </div>
+         <div>
+            <img src="https://images.unsplash.com/photo-1560472355-536de3962603?w=400&h=300&fit=crop&q=80" width="80px" height="90px">
+            <h4>Customer Assurance</h4>
+            <p>Free density testing available at every pump. Customers can verify fuel quality on-site. Complaint resolution within 24 hours guaranteed.</p>
+        </div>
+    </div>
+    <div class="about7">
+        <div>
+            <button type="button" class="army">Modern Infrastructure</button>
+            <h1>State-of-the-Art <span class="src-only3">Fuel Stations</span></h1>
+            <p>Our partner stations feature modern canopy designs, LED lighting, digital price displays, and automated fuel dispensers. Every station is designed for maximum efficiency and customer comfort.</p>
+            <div>
+                <img src="https://images.unsplash.com/photo-1545231027-637d2f6210f8?w=50&h=50&fit=crop" width="50px" height="auto">
+                <h4>Underground leak detection tanks</h4>
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=50&h=50&fit=crop" width="50px" height="auto">
+                <h4>Vapour recovery systems</h4>
+            </div>
+            <div>
+                <img src="https://c8.alamy.com/comp/3DH9JBY/this-image-features-a-surveillance-camera-sign-indicating-that-an-area-is-monitored-247-for-security-it-emphasizes-safety-and-awareness-for-individu-3DH9JBY.jpg" width="50px" height="auto">
+                <h4>CCTV surveillance 24/7</h4>
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1569003339405-ea396a5a8a90?w=50&h=50&fit=crop" width="50px" height="auto">
+                <h4>Emergency fire suppression</h4>
+            </div>
+        </div>
+        <div>
+            <img src="https://petrolgroup.pro/en/wp-content/uploads/2025/01/Site-_-Capa-do-Blog-1920X1080-3.png" width="80px" height="90px">
+        </div>
+    </div>
+    <div style="text-align:center;margin-top:10px;">
+        <button type="button" class="police">Testimonials</button>
+        <h1>Trusted by <span class="src-only4">Thousands</span></h1>
+        <p>Hear from our dealers and customers about their experience with quality and service.</p>
+    </div>
+    <div class="about8">
+        <div>
+            <img src="https://www.cbac.com/images/blog/Screenshot_4[1].jpg" width="80px" height="90px">
+            <p>"The quality testing support helped me build customer trust. My station sales increased 40% in the first year because customers know our fuel is lab-certified pure."</p>
+            <div>
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" width="80px" height="90px" alt="rounded-circle">
+                <h4>Ramesh Patel</h4>
+                <p>Dealer Owner, Ahmedabad</p>
+            </div>
+        </div>
+        <div>
+            <img src="https://www.solopcms.com/blog/wp-content/uploads/2024/10/image8-4.jpg" width="80px" height="90px">
+            <p>"Their fuel purity standards reduced our vehicle maintenance costs by 25%. The monthly quality reports help us track exactly what goes into our fleet tanks."</p>
+            <div>
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face" width="80px" height="90px">
+                <h4>Priya Sharma</h4>
+                <p>Fleet Manager, Mumbai</p>
+            </div>
+        </div>
+        <div>
+            <img src="https://media.istockphoto.com/id/1392699476/photo/customer-paying-at-petrol-bump-by-scanning-qr-code-using-mobile-phone-after-refueling-car.jpg?s=612x612&w=is&k=20&c=wU468mrsjlzXs2EGBjc7R2VwQTSMTRMSq1mVGqx2dK0=" width="80px" height="90px">
+            <p>"I only fuel at their partner pumps now. The free density check gives me confidence. My truck engine runs smoother and mileage improved by 2 km/l."</p>
+            <div>
+                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face" width="80px" height="90px">
+                <h4>Amit Kumar</h4>
+                <p>Commercial Driver, Delhi</p>
+            </div>
+        </div>
+    </div>
+    <div style="text-align:center;margin-top:10px;">
+        <h1>Our Partner Oil Companies</h1>
+        <p>Trusted partnerships with India's leading fuel brands</p>
+    </div>
+    <div class="about9">
+        <div>
+            <img src="https://www.bing.com/th/id/OIP._-UmR1jWTgSb-RD297td3QHaE8?w=193&h=135&c=8&rs=1&qlt=70&o=6&pid=3.1&rm=2" width="80px" height="auto">
+        </div>
+        <div>
+            <img src="https://www.bing.com/th/id/OIP.LQuUHfXVtgjguSE8uJMkDAAAAA?w=193&h=145&c=8&rs=1&qlt=70&o=6&pid=3.1&rm=2" width="80px" height="auto">
+        </div>
+        <div>
+            <img src="https://www.bing.com/th/id/OIP.4NpzyELtsXNR-gdKhnNi_AAAAA?w=194&h=186&c=8&rs=1&qlt=70&o=6&pid=3.1&rm=2" width="80px" height="auto">
+        </div>
+        <div>
+            <img src="https://www.bing.com/th/id/OIP.siwHR7MjMs4NYkX4OPAb3AAAAA?w=194&h=194&c=8&rs=1&qlt=70&o=6&pid=3.1&rm=2" width="80px" height="auto">
+        </div>
+        <div>
+            <img src="https://www.bing.com/th/id/OIP.MCcwca-w_frjCSqOE4DAgAHaEc?w=193&h=135&c=8&rs=1&qlt=70&o=6&pid=3.1&rm=2" width="80px" height="auto">
+        </div>
+        <div>
+            <img src="https://www.bing.com/th/id/OIP.JjTDaFaZQEyJ0KO2TQAugAAAAA?w=193&h=193&c=8&rs=1&qlt=70&o=6&pid=3.1&rm=2" width="80px" height="auto">
+        </div>
+    </div>
+    <div class="about10" style="text-align:center;">
+        <h1>Ready to Build Your <span class="src-only5">Fuel Empire?</span></h1>
+        <p>Join 2,500+ successful dealers across India. Complete application support, financing assistance, and lifetime operational guidance — all included.</p>
+        <div>
+            <button type="button" class="umar1">Start Application — It's Free -></button>
+            <button type="button" class="umar2">Check Eligibility</button>
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1560472355-536de3962603?w=20&h=20&fit=crop" width="50px" height="auto">
+            <h4>No Hidden Fees</h4>
+            <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=20&h=20&fit=crop" width="50px" height="auto">
+            <h4>Expert Guidance</h4>
+            <img src="https://img.freepik.com/free-vector/approved-sign-with-shield-gradient_78370-1025.jpg?semt=ais_hybrid&w=740&q=80" width="50px" height="auto">
+            <h4>Fast Approval</h4>
+        </div>
+    </div>
+</section>
+<section name="footer">
+    <div style="text-align:center;">
+    <h4><span class="vvr"><i class="fa-solid fa-bell"></i></span>Stay Updated</h4>
+    <p>Subscribe to our newsletter for the latest dealership opportunities and industry updates</p>
+    <form>
+        <input type="text" name="Name" id="myName" placeholder="Your Email Address">
+        <button type="button" class="suhas7">Subscribe</button>
+    </form>
+    </div>
+    <div class="foot-line">
+        <div>
+            <img src="https://www.bing.com/th/id/OIP.PqBkFVOiUZfPYeM4ACJDKwHaHa?w=194&h=194&c=8&rs=1&qlt=70&o=6&pid=3.1&rm=2" width="100px" height="auto">
+            <p>Join our petrol pump dealer network and enjoy numerous benefits including brand association, marketing support, and business growth opportunities.</p>
+            <p><i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i></p>
+        </div>
+        <div>
+            <h4>🔗Quick Links</h4>
+            <div>
+                <a href="#" class="service">Home</a>
+            </div>
+            <div>
+                <a href="#" class="service">About Us</a>
+            </div>
+            <div>
+                <a href="#" class="service">Apply Now</a>
+            </div>
+            <div>
+                <a href="#" class="service">Eligibility</a>
+            </div>
+            <div>
+                <a href="#" class="service">Indian Oil</a>
+            </div>
+            <div>
+                <a href="#" class="service">HPCL</a>
+            </div>
+            <div>
+                <a href="#" class="service">BPCL</a>
+            </div>
+        </div>
+         <div>
+            <h4>📋Our Services</h4>
+            <div>
+                <a href="#" class="service">Dealership Application</a>
+            </div>
+            <div>
+                <a href="#" class="service">Documentation Support</a>
+            </div>
+            <div>
+                <a href="#" class="service">Location Approval</a>
+            </div>
+            <div>
+                <a href="#" class="service">Training Programs</a>
+            </div>
+            <div>
+                <a href="#" class="service">Marketing Assistance</a>
+            </div>
+            <div>
+                <a href="#" class="service">Technical Support</a>
+            </div>
+            <div>
+                <a href="#" class="service">Financial Guidance</a>
+            </div>
+        </div>
+        <div>
+            <h4>📞Contacts</h4>
+            <div>
+                <p><i class="fa-solid fa-location-dot"></i></p>
+                <h4>Head Office</h4>
+                <p>BANDRA KURLA COMPLEX, MUMBAI ROAD DEV. AUTORITY, BKC ROAD, MUMBAI PIN: 400051</p>
+            </div>
+            <div>
+                <p><i class="fa-solid fa-envelope"></i></p>
+                <h4>Email</h4>
+                <p>info@universalpetrolpump.in</p>
+            </div>
+            <div>
+                <p><i class="fa-solid fa-phone"></i></p>
+                <h4>Phone</h4>
+                <p>+91896732862</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer1">
+       <div>
+          <p>© 2025 Petrolpumpdealership. All rights reserved.</p>
+       </div>
+       <div>
+        <a href="#" class="service">Privacy Policy</a>
+        <a href="#" class="service">Terms & Conditions</a>
+        <a href="#" class="service">Site Map</a>
+       </div>
+    </div>
+</section>
+</body>
+</html>
